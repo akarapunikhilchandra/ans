@@ -1,0 +1,5 @@
+- name: ping the node
+  hosts: node-1.joindevops.cloud
+  tasks: 
+  - name: pinging the server
+    ansible.built.in.ping:
