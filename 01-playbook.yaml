@@ -2,4 +2,4 @@
   hosts: node-1.joindevops.cloud
   tasks: 
   - name: pinging the server
-    ansible.built.in.ping:
+    ansible.builtin.ping:
