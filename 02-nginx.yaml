@@ -1,0 +1,12 @@
+- name: install and run nginx
+  hosts: node-1.joindevops.cloud
+  become: yes
+  tasks: 
+    - name: install nginx
+      ansible.builtin.yum:
+        name: nginx
+        state: installed
+    - name: start service
+      ansible.builtin.service:
+        name: nginx
+        state: started
