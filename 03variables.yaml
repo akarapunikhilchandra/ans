@@ -1,0 +1,13 @@
+- name: variables in ansible
+  hosts: node-1.joindevops.cloud
+  vars:
+    COURSE: DevOps
+    TRAINER: nikhil
+    DURATION: 110 hours
+  tasks:
+    - name: print hello world
+      ansible.builtin.debug:
+        msg: "HELLO, I am learning ansible"
+    - name:
+      ansible.builtin.debug:
+        msg: "hello, i am learning {{COURSE}}, trainer is {{TRAINER}}, Duration is {{DURATION}}"
