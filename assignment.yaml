@@ -2,7 +2,7 @@
 - name: create user
   hosts: localhost
   vars:
-    target_username: "roboshop"  # Change this to the desired username
+    target_username: "nikhil"  # Change this to the desired username
 
   tasks:
     - name: check if user exists
