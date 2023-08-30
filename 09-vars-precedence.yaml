@@ -8,9 +8,9 @@
   - name: NAME
     prompt: please enter trainer name
     private: false
-  tasks:
-  - name: variable at task level
-    vars:
-      NAME: sivakumar-task
+  # tasks:
+  # - name: variable at task level
+  #   vars:
+  #     NAME: sivakumar-task
     ansible.builtin.debug:
       msg: "Trainer name is {{NAME}}"
