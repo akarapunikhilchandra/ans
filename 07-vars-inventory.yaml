@@ -3,4 +3,4 @@
   tasks: 
   - name: print mondodb USERNAME
     ansible.builtin.debug:
-      msg: "username is "{{MONGODB_USERNAME}}"
+      msg: "username is {{MONGODB_USERNAME}}"
