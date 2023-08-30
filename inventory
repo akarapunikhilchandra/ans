@@ -4,4 +4,5 @@ mongodb.joindevops.cloud
 
 [mongodb:vars]
 MONGO_USERNAME=mongodbadmins
+
 NAME=sivakumar-inventory
