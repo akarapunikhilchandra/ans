@@ -1,5 +1,3 @@
 mongo.joindevops.cloud
-localhost
 
-[mongo-db]
-MONGODB_USERNAME=mongo
+MONGO_USERNAME=mongodbadmin
