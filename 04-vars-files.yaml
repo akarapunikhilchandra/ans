@@ -1,9 +1,9 @@
 - name: referring vars from variables
   hosts: localhost
   become: yes
-  var_files:
+  vars_files:
   - variables.yaml
   tasks:
   - name: printing variables
     ansible.builtin.debug:
-      msg: "we are learning {{NAME}}, Duration is: {{DURATION}}, trainer is {{TRAINER}}"
+      msg: "we are learning {{NAME}}, Duration is: {{DURATION}}, trainer is {{TRAINER}}" 
