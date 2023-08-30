@@ -1,2 +1,5 @@
--- #node-1.joindevops.cloud
+mongo.joindevops.cloud
 localhost
+
+[mongo-db]
+MONGODB_USERNAME=mongo
