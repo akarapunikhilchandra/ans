@@ -1,3 +1,3 @@
-mongo.joindevops.cloud
+mongodb.joindevops.cloud
 [mongodb:vars]
-MONGO_USERNAME=mongodbadmin
+MONGO_USERNAME=mongodbadmins
