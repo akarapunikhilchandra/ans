@@ -1,0 +1,32 @@
+---
+- name: create user
+  hosts: localhost
+  vars:
+    target_username: "roboshop"  # Change this to the desired username
+
+  tasks:
+    - name: check if user exists
+      ansible.builtin.command: id "{{ target_username }}"
+      register: out
+      ignore_errors: true
+
+    - name: print the command output
+      ansible.builtin.debug:
+        msg: "output is: {{ out.stdout }}"
+      
+    - name: print exit status
+      ansible.builtin.debug:
+        msg: "{{ out.rc }}"
+      
+    - name: create user if not exists
+      ansible.builtin.user:
+        name: "{{ target_username }}"
+        state: present
+      when: out.rc != 0
+      become: yes
+      
+    - name: print user creation status
+      ansible.builtin.debug:
+        msg: "User {{ target_username }} has been created"
+      when: out.rc != 0  # Only print if the user was created
+
